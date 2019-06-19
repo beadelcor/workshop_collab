@@ -1,30 +1,13 @@
 ---
 title: "Website"
-author: "Bea"
+author: "Bea & Rainbow"
 date: "19/06/2019"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 ## This is a Github trial
 
-I will add some nice plots to see if it works!
+We’ll be exploring the nycflights13 dataset. This is data on flights departing New York City in 2013. This will be a new dataset to use in our project
 
-Load Tidyverse
-```{r tidyverse}
-library(tidyverse) ## do this every time you restart R and need it 
-```
-
-We're learning ggplot2 It's going to be amazing. 
-
-```{r data}
-
-ohi_data <- read_csv("https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/OHI_global_data.csv")
-
-```
-We start!!
-
-```{r start ggplot} 
-ggplot(ohi_data, aes(x=georegion_one, y=OHI_score)) + 
-  geom_point()
-
-```
