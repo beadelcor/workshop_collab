@@ -5,26 +5,26 @@ date: "19/06/2019"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+## This is a Github trial
+
+I will add some nice plots to see if it works!
+
+Load Tidyverse
+```{r tidyverse}
+library(tidyverse) ## do this every time you restart R and need it 
 ```
 
-## R Markdown
+We're learning ggplot2 It's going to be amazing. 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+```{r data}
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+ohi_data <- read_csv("https://raw.githubusercontent.com/OHI-Science/data-science-training/master/data/OHI_global_data.csv")
 
-```{r cars}
-summary(cars)
 ```
+We start!!
 
-## Including Plots
+```{r start ggplot} 
+ggplot(ohi_data, aes(x=georegion_one, y=OHI_score)) + 
+  geom_point()
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
