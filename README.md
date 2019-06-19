@@ -1,3 +1,3 @@
 # workshop_collab
 Collab with Rainbow
-trial. Hello world how are uhdf sl
+trial. This is day 2 of the workshop.
